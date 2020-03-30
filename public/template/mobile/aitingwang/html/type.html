@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>栏目列表 - 移动版{$system.name}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content='{$description}'>
+    <meta http-equiv="Cache-Control" content="no-transform"> 
+    <meta http-equiv="Cache-Control" content="no-siteapp"> 
+    {include file="common/css"}
+</head>
+
+<body>
+    <!--头部start-->
+    <div class="head">
+        <a href="/"><div class="head_logo"></div></a>
+    </div>
+    <div class="menu">
+        <a href="/">首页</a>
+        <a href="/type.html" class="active">分类</a>
+    </div>
+    <!--头部end-->
+    <div class="ad">
+        <script language="javascript">pub01();</script>
+    </div>
+    {tp:nav name='nav' limit='10'}
+    <h3 class="cat_tit">
+        <em></em>
+        <a href="{$nav.url}">{$nav['catname']}</a>
+    </h3>
+    <div class="type_list">
+        {if $nav.sub}
+        {volist name="$nav.sub" id="v"}
+        <a href="{$v.url}">{$v.catname}</a>
+        {/volist}
+        {/if}
+    </div>
+    {/tp:nav}
+    <!--尾部start-->
+    {include file="common/footer"/}
+    <!--尾部end-->
+</body>
+
+</html>

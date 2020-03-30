@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{$title}_{$system.name}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+    <link type="text/css" rel="stylesheet" href="{$public}css/style.css">
+    <script language="javascript" src="{$public}js/aiting2.js"></script>
+</head>
+
+<body>
+    {include file="common/header"/} 
+    <div class="main">
+        <div class="left article">
+            <div class="list">
+                <div class="list-location">
+                    <div class="lin_o">
+                        <a href="/">首页</a>
+                        {tp:position name='v'}
+                         > <a href="{$v.url}">{$v.catname}</a>
+                        {/tp:position}
+                    </div>
+                </div>
+            </div>
+            {tp:nav name='nav' id="$cate['id']"}
+            <div class="article_box">
+                <div class="title">{$nav.catname}<a href="{$nav.url}" class="right" style="font-size: 18px;font-weight: normal;line-height: 36px;">更多 &gt;&gt; </a></div>
+                <ul>
+                    {tp:list id="$nav['id']" name="list" limit="8" where="image <> ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" width="130px" alt="{$list.title}"/><br>{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+                <div class="clear"></div>
+                <div class="left ysad"><script language="javascript">yuansheng();</script></div>
+                <div class="clear"></div>
+            </div>
+            <div class="main_2">
+                <ul>
+                    {tp:list id="$nav['id']" name="list" limit="4" where="image = ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+                <ul>
+                    {tp:list id="$nav['id']" name="list" limit="4,4" where="image = ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+            <div class="clear"></div>
+            {/tp:nav}
+        </div>
+        <div class="right">
+            <div class="gg3"><script language="javascript">right01();</script></div>
+            <div class="main_5">
+                <div class="title">星闻播报</div>
+                <ul>
+                    {tp:list name="list" limit="4" where="image <> ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" width="130px" alt="{$list.title}"/><br>{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+            <div class="gg3"><script language="javascript">art_right01();</script></div>
+            <div class="gg4"></div>
+            <div class="main_10">
+                <div class="title">阅读排行榜</div>
+                <ul>
+                    {tp:list name="list" limit="10"}
+                    <li><span>{$key+1}</span><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+            <div class="main_5">
+                <div class="title">劲爆视频</div>
+                <ul>
+                    {tp:list name="list" limit="2" where="image <> ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" width="130px" alt="{$list.title}"/><br>{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    {include file="common/footer"/} 
+</body>
+</html>

@@ -1,0 +1,171 @@
+<div class="footer">
+	<div class="ft">
+    	<div class="ft_logo"></div>
+        <div class="fl">
+            <div class="fr_list"><b>星闻</b><a href="/xinwen/neidi/" target="_blank">内地星闻</a><a href="/xinwen/gangtai/" target="_blank">港台星闻</a><a href="/xinwen/haiwai/" target="_blank">海外星闻</a><a href="/xinwen/bagua/" target="_blank">八卦揭秘</a></div>
+            <div class="fr_list"><b>电影</b><a href="/film/huayu/" target="_blank">华语电影</a><a href="/film/oumei/" target="_blank">欧美电影</a><a href="/film/rihan/" target="_blank">日韩电影</a><a href="/film/tucao/" target="_blank">影评吐槽</a></div>
+            <div class="fr_list"><b>电视</b><a href="/tv/zongyi/" target="_blank">综艺节目</a><a href="/tv/dianshiju/" target="_blank">电视剧</a><a href="/tv/ping/" target="_blank">穿帮吐槽</a></div>
+            <div class="fr_list"><b>音乐</b><a href="/music/huayu/" target="_blank">华语音乐</a><a href="/music/oumei/" target="_blank">欧美音乐</a><a href="/music/rihan/" target="_blank">日韩音乐c</a></div>
+            <div class="fr_list"><b>星图</b><a href="/tu/gaoxiao/" target="_blank">搞笑星星</a><a href="/tu/xiezhen/" target="_blank">明星写真</a><a href="/tu/jiepai/" target="_blank">街拍偷拍</a></div>
+            <div class="fr_list"><b>视频</b><a href="/video/mv/" target="_blank">极品MV</a><a href="/video/egao/" target="_blank">恶搞视频</a></div>
+            <div class="fr_list"><b>娱乐</b><a href="/yule/xw/" target="_blank">爱听星闻</a><a href="/yule/yinyue/" target="_blank">爱听音乐</a><a href="/yule/yingshi/" target="_blank">爱听影视</a><a href="/yule/bagua/" target="_blank">爱听八卦</a></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="copyright_bg">
+    <div class="copyright_nav">
+        <div class="copyright">copyright&#169;aitingwang.com 版权所有</div>
+        <a href="#" target="_blank">公司简介</a>
+        <a href="#" target="_blank">联系方法</a>
+        <a href="#" target="_blank">招聘信息</a>
+        <a href="#" target="_blank">客户服务</a>
+        <a href="/sitemap.html" target="_blank">网站地图</a>
+        <a href="#" target="_blank">辽ICP备10015884号</a>
+    </div>
+</div>
+{if $system.member}
+<div class="cd-user-modal"> 
+    <div class="cd-user-modal-container">
+        <ul class="cd-switcher">
+            <li><a href="#0">用户登录</a></li>
+            <li><a href="#0">注册新用户</a></li>
+        </ul>
+        <div id="cd-login"> <!-- 登录表单 -->
+            <form class="cd-form" action="{:url('user/login')}" method="post">
+                <p class="fieldset">
+                    <label class="image-replace cd-username" for="signin-username">用户名</label>
+                    <input class="full-width has-padding has-border" id="signin-username" type="text" name="username" placeholder="输入用户名">
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signin-password">密码</label>
+                    <input class="full-width has-padding has-border" id="signin-password" type="password" name="password" placeholder="输入密码">
+                </p>
+                <p class="fieldset message_code">
+                    <label class="image-replace cd-code" for="signin-code">验证码</label>
+                    <input class="full-width has-padding has-border" id="signin-code" type="text" name="message_code" placeholder="验证码">
+                    <img src="{:url('error/captcha')}" class="signin-img" title="点击切换验证码">
+                </p>
+                <p class="fieldset">
+                    <input type="checkbox" id="remember-me" name="remember" checked>
+                    <label for="remember-me">记住登录状态</label>
+                </p>
+                <p class="fieldset">
+                    <input class="full-width2" type="submit" value="登 录">
+                </p>
+            </form>
+        </div>
+        <div id="cd-signup"> <!-- 注册表单 -->
+            <form class="cd-form" action="{:url('user/register')}" method="post">
+                <p class="fieldset">
+                    <label class="image-replace cd-email" for="signup-email">邮箱</label>
+                    <input class="full-width has-padding has-border" id="signup-email" type="email" name="email" placeholder="输入mail">
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signup-password">密码</label>
+                    <input class="full-width has-padding has-border" id="signup-password" type="password" name="password" placeholder="输入密码">
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace cd-password" for="signup-password2">确认密码</label>
+                    <input class="full-width has-padding has-border" id="signup-password2" type="password" name="password2" placeholder="确认密码">
+                </p>
+                <p class="fieldset message_code">
+                    <label class="image-replace cd-code" for="signup-code">验证码</label>
+                    <input class="full-width has-padding has-border" id="signup-code" type="text" name="message_code" placeholder="验证码">
+                    <img src="{:url('error/captcha')}" class="signup-img" title="点击切换验证码">
+                </p>
+                <p class="fieldset">
+                    <input type="checkbox" id="accept-terms">
+                    <label for="accept-terms">我已阅读并同意 <a href="#0">用户协议</a></label>
+                </p>
+                <p class="fieldset">
+                    <input class="full-width2" type="submit" value="注册新用户">
+                </p>
+            </form>
+        </div>
+        <a href="#0" class="cd-close-form">关闭</a>
+    </div>
+</div>
+{/if}
+<div style="display:none;">
+    <script language="javascript">zxtj();</script>
+</div>
+<script type="text/javascript" src="{$public}js/jquery.js"></script>
+<script type="text/javascript" src="{$public}js/main.js"></script>
+<script type="text/javascript" src="{$public}js/tab.js"></script>
+<script type="text/javascript">
+	$('.search_list_txt').on('click', function(){
+		$(".search_list").css("display","block");
+	});
+	$(".search_list li a").on('click', function(){
+        $('.search_list_txt').text($(this).text());
+        $(this).parent().parent().css("display","none");
+    });
+    //刷新验证码操作
+    $("#cd-login .signin-img").click(function(){
+        $(this).attr("src",$(this).attr("src")+'?'+Math.random());
+    });
+    $("#cd-login .signup-img").click(function(){
+        $(this).attr("src",$(this).attr("src")+'?'+Math.random());
+    });
+    //banner 按钮动画
+    $(".banner").hover(function(){
+    $(this).find(".banner_qq").show(100);}
+    ,function(){
+    $(this).find(".banner_qq").hide(100);
+    });
+    //banner
+    $(function(){
+    (function(){
+        var curr = 0;
+        $("#bannerjsNav .trigger").each(function(i){
+            $(this).click(function(){
+                curr = i;
+                $("#bannerjs a").eq(i).fadeIn("slow").siblings("a").hide();
+                $(this).siblings(".trigger").removeClass("imgSelected").end().addClass("imgSelected");
+                return false;
+            });
+        });
+        
+        var pg = function(flag){
+            if (flag) {
+                if (curr == 0) {
+                    todo = 4;
+                } else {
+                    todo = (curr - 1) % 5;
+                }
+            } else {
+                todo = (curr + 1) % 5;
+            }
+            $("#bannerjsNav .trigger").eq(todo).click();
+        };
+        
+        $("#prev").click(function(){
+            pg(true);
+            return false;
+        });
+        
+        $("#next").click(function(){
+            pg(false);
+            return false;
+        });
+        
+        //自动播放
+        var timer = setInterval(function(){
+            todo = (curr + 1) % 5;
+            $("#bannerjsNav .trigger").eq(todo).click();
+        },8000);
+        
+        $("#bannerjs,#prev,#next").hover(function(){
+                clearInterval(timer);
+            },
+            function(){
+                timer = setInterval(function(){
+                    todo = (curr + 1) % 5;
+                    $("#bannerjsNav .trigger").eq(todo).click();
+                },8000);			
+            }
+        );
+    })();
+});
+</script>

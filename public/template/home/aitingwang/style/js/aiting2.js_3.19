@@ -1,0 +1,137 @@
+function index_r01()
+{
+	document.writeln('<script type="text/javascript">/*300*250 创建于 2015-10-19*/var cpro_id = "u2359111";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function index_02()
+{
+	document.writeln('<script type="text/javascript">/*960*90 创建于 2015-10-08*/var cpro_id = "u2343111";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function topbanner()
+{
+	document.writeln('<script type="text/javascript">/*aiting960*90 创建于 2015-12-30*/var cpro_id = "u2472435";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function Cleft01()
+{
+	//***document.writeln('<a href="http://cnrdn.com/PvpD" target="_blank"><img width="460" height="57" src="http://www.aitingwang.com/pub/46658-1.gif" border="0"/></a>');
+	document.writeln('<script type="text/javascript">/*446*60 创建于 2015-12-30*/var cpro_id = "u2472527";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function Cleft_1()
+{
+	document.writeln('<script type="text/javascript">/*280*280 创建于 2015-12-30*/var cpro_id = "u2472445";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function Cleft_2()
+{
+	document.writeln('<script type="text/javascript">var cpro_id="u2472448";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"336",rsi1:"280",pat:"17",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0"}</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+	
+}
+function Cleft_02()
+{
+	document.writeln('<script type="text/javascript">/*标题下右侧336*280 创建于 2015-10-08*/var cpro_id = "u2343125";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function Cleft_3()
+{
+	document.writeln('<script type="text/javascript">/*500*200 创建于 2015-12-30*/var cpro_id = "u2472459";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function Cleft_4()
+{
+	document.writeln('<script type="text/javascript">/*280*280 创建于 2015-12-30*/var cpro_id = "u2472470";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function Cleft_5()
+{
+	document.writeln('<script type="text/javascript">/*标题下右侧336*280 创建于 2015-10-08*/var cpro_id = "u2343125";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function yuansheng()
+{
+	document.writeln('<script type="text/javascript">/*680*150 创建于 2015-12-30*/var cpro_id = "u2472481";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function right01()
+{
+	document.writeln('<script type="text/javascript">/*右侧悬停300*250 创建于 2015-12-30*/var cpro_id = "u2472510";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+function right02()
+{
+	//<!-- 广告位：爱听网aitingwang.com（300*200） -->
+	document.writeln('<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "983267";</script>');
+	document.writeln('<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script>');
+}
+
+function art_right01()
+{
+	document.writeln('<script type="text/javascript">/*右侧悬停300*250 创建于 2015-12-30*/var cpro_id = "u2472510";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+
+function bofang()
+{
+	document.writeln('<script type="text/javascript">/*500*200 创建于 2015-12-30*/var cpro_id = "u2472459";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+}
+
+function duilian()
+{
+	//document.writeln('<script type="text/javascript">/*atw对联120*300 创建于 2014-08-05*/var cpro_id = "u1645553";</script>');
+	//document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+	document.writeln('<script>dw_topm=60;dw_tw=1000;</script><script charset=gb2312 src="http://dl.img80.net/showpage.asp?u=15214"></script>');
+}
+
+function fu()
+{
+	document.writeln('<script type="text/javascript">/*300*250 创建于 2015-10-19*/var cpro_id = "u2359111";</script>');
+	document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>');
+	
+	
+	document.writeln('<script charset=gb2312 src="http://v.img80.net/showpage2.asp?u=15214"></script>');
+}
+
+function tj()
+{
+	document.writeln('<script src="http://s13.cnzz.com/z_stat.php?id=1253202505&web_id=1253202505" language="JavaScript"></script>');
+	
+var _hmt = _hmt || [];
+	
+(function() 
+		{
+ 
+		var hm = document.createElement("script");
+ 
+		hm.src = "//hm.baidu.com/hm.js?8a8f114a0099a7a54133c3e78e6bcc01";
+	  
+  var s = document.getElementsByTagName("script")[0];
+	  
+  s.parentNode.insertBefore(hm, s);
+		
+}
+	 )();
+
+}
+
+function zxtj()
+{
+	document.writeln('<script src="http://s11.cnzz.com/z_stat.php?id=1255273305&web_id=1255273305" language="JavaScript"></script>');
+}
+
+document.writeln('<script type="text/javascript">/*为了保证用户体验及收益，图片大小不得小于：200*180*//* 创建于 2015-12-30*/var cpro_id = "u2472514";</script>');
+document.writeln('<script src="http://cpro.baidustatic.com/cpro/ui/i.js" type="text/javascript"></script>');

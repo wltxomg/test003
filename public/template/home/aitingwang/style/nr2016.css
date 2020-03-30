@@ -1,0 +1,90 @@
+.bgWhite{ background: #fff; padding: 20px 40px 40px 40px; width: 790px;}
+.nrHeader{ position: relative; padding-bottom: 36px;}
+.nrHeader .crumbs{ font-size: 16px;}
+.nrHeader h1{ margin: 10px 0; font-size: 28px; line-height: 40px;}
+.nrHeader .infor{ color: #999; font-size: 16px; line-height: 22px;}
+.nrHeader .infor a{color: #999; }
+.nrHeader .shareCon{ position: absolute; z-index: 5; right: 0; bottom: 48px; }
+.nrHeader .shareCon a,.tuisong .share a{ width: 41px; height: 40px; overflow: hidden; display: inline-block; margin-left:18px; background: url("http://skin.kankanews.com/v7/images/share2_icon.png") no-repeat 0 0; cursor: pointer;}
+.nrHeader .shareCon a.sina,.tuisong .share a.sina{ background-position: 0 0;}
+.nrHeader .shareCon a.wx,.tuisong .share a.wx{ background-position: -60px 0;}
+.nrHeader .shareCon a.qq,.tuisong .share a.qq{ background-position: -120px 0;}
+
+.textBody{ font-size: 18px;}
+.textBody img{ display: block; margin: 0 auto; max-width: 100%; width: auto;}
+.textBody p{ color: #111; line-height: 32px;}
+.textBody p.contentVideo{width: 600px;height: 382px;margin: 30px auto;}
+.textBody p span{ margin: 0 auto; color: #999; display: block; text-align: center; line-height: 30px; margin-top:10px;}
+.statement,#kankan_bq{color: #c7213d; text-align:center; margin:10px 0 40px; font-size: 18px;}
+.page { text-align: center;}
+.page a{ width: 36px; height: 36px; line-height: 36px; text-align: center; display: inline-block; border: 2px #eeeeee solid; border-radius: 2px; margin:0 2px; vertical-align: top; margin-bottom:30px;}
+.page a.cur{border: 2px #2d89f0 solid; background: #2d89f0; color: #ffffff; }
+.page a.prev,.page a.next{ background:url(http://skin.kankanews.com/v6/images/icons.png) no-repeat;}
+.page a.prev{border: 2px #cccccc solid;background-color: #cccccc; background-position:11px -286px;}
+.page a.next{border: 2px #666666 solid;background-color: #666666; background-position:-23px -286px;}
+
+.relevant{ border: 1px solid #f5f5f5; margin-top:20px;}
+.relevant .tit{ position: relative; padding: 10px 0; height: 38px;  border-bottom: 1px solid #f5f5f5; font-size: 18px; color: #666;}
+.relevant .tit h1{ margin-left: 30px; background: url("http://skin.kankanews.com/v7/images/line4r_bg.gif") no-repeat 0 center; padding-left: 24px; font-size: 24px; height: 38px; line-height: 36px; overflow: hidden; color: #222;}
+.relevant .tit .keywords{ position: absolute; top: 10px; right: 20px; line-height: 36px; font-size: 18px; color: #666; display: block; height: 36px; width: 400px; overflow: hidden;text-align: right;}
+.relevant .tit .keywords em{ display: inline-block; display: inline-block; margin: 0 5px;}
+.relevant .tit .keywords a{ color: #666;}
+.relevant ul.relevantList{ margin-left: 30px; width: 715px;}
+.relevant ul.relevantList li{padding: 10px 0 10px 24px; height: 38px; line-height: 38px; overflow: hidden; display: block; margin: 0; border-bottom: 1px solid #f5f5f5; background: url("http://skin.kankanews.com/v7/images/circle_icon.png") no-repeat 0 center;}
+.relevant ul.relevantList li:last-child{ border-bottom: 0;}
+
+.videoCom{ width: 790px; height: 489px; overflow: hidden; margin-bottom: 20px; background: #000;}
+.videoCom object,.videoCom embed{ width: 100%; height: 100%;}
+.videoCom .rev{ width: 100%; height: 100%;}
+.videoCom .fix{ position: fixed; z-index: 1000; right: 0; bottom: 0; width: 320px; height: 180px;}
+
+/*--鏍稿績鎻愮ず--*/
+.tips{ border: 1px solid #eee; padding: 25px; position: relative; margin-bottom: 20px; font-size: 18px; line-height: 32px; color: #999;}
+.tips span{ position: absolute;z-index: 10; width: 120px; height: 36px; background: #e91839; color: #fff; font-size: 18px; text-align: center; line-height: 36px; left: 26px; top: -19px;}
+
+/*鎺ㄩ€佹寜閽�*/
+.tuisong{ height: 40px; font-size: 20px; color: #333; padding: 15px 10px; background: #FFF; position: relative; border: 1px solid #DDD; z-index: 6; -webkit-box-shadow: 0 1px 2px #ddd; -moz-box-shadow: 0 1px 2px #ddd; box-shadow: 0 1px 2px #DDD; position:relative;  margin: -20px 0 20px; }
+.tuisong i.tsbtn{ margin-left: 18px; margin-top:14px;border-color: transparent transparent #666;border-style: dashed dashed solid; border-width: 0 12px 12px;width: 0;height: 0; position:relative;}
+.tuisong i.tsbtn:after{ content:'';border-color: transparent transparent #ffffff;border-style: dashed dashed solid;border-width: 0 12px 12px;width: 0; height: 0;line-height: 0;position: absolute;left: -12px;top: 2px;z-index: 2;}
+.tuisong i.tsbtn.close{ border-color: #f44336 transparent transparent;border-style: solid dashed dashed;border-width: 12px 12px 0;}
+.tuisong i.tsbtn.close:after{border-color: #ffffff transparent transparent;border-style: solid dashed dashed;border-width: 12px 12px 0; top: -14px;}
+.action_panels { position: absolute; bottom: -250px;  left: 0px; font-size: 12px; z-index: 5; _width: 1px; text-align:left;  display: none;  }
+.action_panels .panel {  position: relative; margin-top: 0;  background: #FFF;  border: 1px solid #ddd;  -webkit-box-shadow: 0 0 2px #ddd;  -moz-box-shadow: 0 0 2px #ddd;  box-shadow: 0 0 2px #ddd;}
+.action_panels .panel .inner {  height: 170px; _height: 170px; _zoom: 1;  margin: 0 auto; padding: 32px;}
+.action_panels .action_panel_close { width:21px; height:21px; position: absolute; cursor: pointer; right: 16px; top:16px; background:url(http://skin.kankanews.com/v5/images/icon_close.gif);}
+.panel_share .click_share { width: 240px;}
+.panel_share .click_share li { width: 75px;  }
+.panel_share .copy_share {width: 506px;}
+.panel_share .copy_share input.txt { width: 494px;}
+.panel_share .copy_share .btns a {  width: 119px; }
+.panel_share h3 { color: gray; font-size: 18px; margin-bottom: 16px;}
+.panel_share .click_share li { margin: 0 3px 8px 0;}
+.panel_share .copy_share { padding-top: 5px; }
+.panel_share .copy_share input.txt {height: 22px;  line-height: 22px; padding: 3px 5px;  border: 1px solid #DDD; border-radius: 3px;}
+.panel_share .copy_share .btns {  margin-top: 10px;}
+.panel_share .copy_share .btns a {  height: 26px; color: gray;  background: #f6f7fb; border: 1px solid #dee2e5; text-align: center; margin-left: 7px;  line-height: 24px; line-height: 26px\9; overflow: hidden; border-radius: 3px;}
+.panel_share .copy_share .btns a:hover {  background: #E3E3E3;  text-decoration: none;}
+.panel_share .copy_share .btns .general { margin-left: 0;}
+.panel_share .copy_share .btns .general .new,.panel_share .copy_share .btns .general:hover .new { color: #F60; font-size: 11px; display: inline-block; margin-left: 3px;}
+.panel_share .copy_share .info { margin-top: 10px;  _padding-bottom: 2px; color: gray;}
+.panel_share .copy_share_tip { position: relative; padding: 6px 8px; background: #f6f7fb; border: 1px solid #dee2e5; border-radius: 3px;}
+.panel_share .copy_share_tip .caret , .triclip{  border-color: transparent transparent #dee2e5;  border-style: dashed dashed solid;  border-width: 0 12px 12px;  width: 0;  height: 0;  line-height: 0;  position: absolute;  top: -11px;  *top: -10px;  left:204px;  z-index: 1;}
+.panel_share .copy_share_tip .caret i , .triclip i{  border-color: transparent transparent #ffffff;  border-style: dashed dashed solid;  border-width: 0 12px 12px;  width: 0;  height: 0;  line-height: 0;  position: absolute;  left: -12px;  top: 2px;  z-index: 2;}
+.panel_share .copy_share_tip .caret i { border-color: transparent transparent #f6f7fb; }
+
+/*--寰崥鍥剧墖--*/
+.show-pic{ text-align:center; padding:10px 0; max-width:578px; overflow:hidden; margin: 0 auto;}
+.show-pic span{ margin:0 auto; display:inline-block; padding:10px; border:1px solid #ececec; text-align:left; position:relative; background:#fff;}
+.show-pic span:before,
+.show-pic span:after{ position: absolute; content:""; width:50%; height:20px; z-index: -1; }
+.show-pic span:before{ box-shadow:0px 0px 5px 5px rgba(0,0,0,0.3),-2px 0 5px 5px rgba(0,0,0,0.3); left:10px; bottom:7px; -moz-transform: rotate(-3deg);}
+.show-pic span:after{ box-shadow:-2px 0px 5px 5px rgba(0,0,0,0.3),0px 0 5px 5px rgba(0,0,0,0.3); right:10px; bottom:7px; -moz-transform: rotate(3deg); }
+.show-pic span img{ display:block; vertical-align:top;}
+.show-pic span b{ display:block; margin-top:12px;}
+.show-pic span em{ margin-right:20px; line-height:normal; font-size:14px; color:#333; }
+.show-pic img{ width: 100% !important;}
+
+#news_GL{font-size: 16px; font-weight: bold; height: 35px; line-height: 35px; margin: 10px 0;  position: relative; text-align: left;}
+#btn_woyaojubao{ background: url(http://skin.kankanews.com/kkv3/images/btn_woyaojubao.png) no-repeat; cursor: pointer; display: block; height: 31px; margin-top: 2px; overflow: hidden; position: absolute; right: 0; text-indent: -999%; top: 0; width: 89px;}
+#bg_pb { display: block; height: 35px; width: 590px;}
+

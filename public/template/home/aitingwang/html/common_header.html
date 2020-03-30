@@ -1,0 +1,103 @@
+<div class="topnav">
+    <div class="topnav_main">
+        <div class="left">
+            <a href="/">首页</a>
+            <a href="/bjjt/" target="_blank">百家讲坛</a>
+            <a href="/kbxh/" target="_blank">恐怖悬疑</a>
+            <a href="/lsjs/" target="_blank">历史军事</a>
+            <a href="/wxxs/"target="_blank">武侠</a>
+            <a href="/dyly/" target="_blank">言情</a>
+            <a href="/SiteMap/Article1.htm" target="_blank">最新文章</a>
+        </div>
+        {if $system.member}
+        <div class="right">
+            <img class="left" src="{$public}images/img.jpg" />
+            {if $Think.session.user.email}
+            <a href="{:url('user/index')}">用户中心</a>
+            <a href="{:url('user/logout')}">退出</a>
+            {else}
+            <span class="main_nav">
+                <a class="cd-signin" href="#0">登录</a>
+                <a class="cd-signup" href="#0">注册</a>
+            </span>
+            {/if}
+        </div>
+        {/if}
+    </div>
+</div>
+<div class="logo_search_bg">
+    <div class="gg">
+        <script language="javascript">topbanner();</script>
+    </div>
+    <div class="logo_search">
+        <div class="logo"></div>
+        <div class="search">
+            <script type="text/javascript">bdsearch();</script>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="navbg">
+    <div class="nav">
+        <ul>
+            <li class="frist_nav select">
+                <a href="/" target="_blank">首页</a>
+                <div class="second_nav"></div>
+            </li>
+            <li class="frist_nav">
+                <a href="/xinwen/" target="_blank">星闻</a>
+                <div class="second_nav">
+                    <a href="/xinwen/neidi/" target="_blank">内地星闻</a>
+                    <a href="/xinwen/gangtai/" target="_blank">港台星闻</a>
+                    <a href="/xinwen/haiwai/" target="_blank">海外星闻</a>
+                    <a href="/xinwen/bagua/" target="_blank">八卦揭秘</a>
+                </div>
+            </li>
+            <li class="frist_nav">
+                <a href="/film/" target="_blank">电影</a>
+                <div class="second_nav">
+                    <a href="/film/huayu/" target="_blank">华语电影</a>
+                    <a href="/film/oumei/" target="_blank">欧美电影</a>
+                    <a href="/film/rihan/" target="_blank">日韩电影</a>
+                    <a href="/film/tucao/" target="_blank">影评吐槽</a>
+                </div>
+            </li>
+            <li class="frist_nav">
+                <a href="/tv/" target="_blank">电视</a>
+                <div class="second_nav">
+                    <a href="/tv/zongyi/" target="_blank">综艺节目</a>
+                    <a href="/tv/dianshiju/" target="_blank">电视剧</a>
+                    <a href="/tv/ping/" target="_blank">穿帮吐槽</a>
+                </div>
+            </li>
+            <li class="frist_nav">
+                <a href="/music/" target="_blank">音乐</a>
+                <div class="second_nav">
+                    <a href="/music/huayu/" target="_blank">华语音乐</a>
+                    <a href="/music/oumei/" target="_blank">欧美音乐</a>
+                    <a href="/music/rihan/" target="_blank">日韩音乐</a>
+                </div>
+            </li>
+            <li class="frist_nav">
+                <a href="/tu/" target="_blank">星图</a>
+                <div class="second_nav">
+                    <a href="/tu/gaoxiao/" target="_blank">搞笑星星</a>
+                    <a href="/tu/xiezhen/" target="_blank">明星写真</a>
+                    <a href="/tu/jiepai/" target="_blank">街拍偷拍</a>
+                </div>
+            </li>
+            <li class="frist_nav">
+                <a href="/video/" target="_blank">视频</a>
+                <div class="second_nav">
+                    <a href="/video/mv/" target="_blank">极品MV</a>
+                    <a href="/video/egao/" target="_blank">影视恶搞</a>
+                </div>
+            </li>
+            <li class="frist_nav"><a href="/index.htm" target="_blank">有声</a>
+                <div class="second_nav"><a href="/xs/" target="_blank">相声曲艺</a>
+                    <a href="/qita/" target="_blank">评书</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

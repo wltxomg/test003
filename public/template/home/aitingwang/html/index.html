@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
+    <title>爱听娱乐_有声读物_有声小说免费下载mp3_评书在线收听-爱听网</title>
+    <meta name="keywords" content="娱乐资讯，明星，影视，综艺，电视剧，搞笑，有声读物，有声小说，评书" />
+    <meta name="description" content="爱听网综合娱乐门户，报道最新娱乐星闻，热门电视剧，热门电影，综艺消息，音乐资讯，八卦新闻等，提供最新有声读物免费下载MP3,评书下载MP3等有声读物打包下载,还有鬼故事,热门有声小说下载MP3,有声读物,有声电子书在线收听网。" />
+    {include file="common/css"/}
+    <script language="javascript" src="{$public}js/aiting2.js"></script>
+    <!-- <script>uaredirect("http://m.aitingwang.com/");</script> -->
+</head>
+
+<body>
+    {include file="common/header"/} 
+    <div class="main">
+        <div class="main_left left">
+            <div class="banner">
+                <a id=prev class="prevBtn banner_qq" href="javascript:void(0)"></a>
+                <a id=next class="nextBtn banner_qq" href="javascript:void(0)"></a>
+                <div id="bannerjs" class="bannerjs">
+                    <div class="box01" style="height: 395px;">
+                        {tp:list id="8" name="list" limit="1" where="image <> '' AND star = 5"}
+                        <a href="{$list.url}" target="_blank" title="{$list.title}">
+                            <img src="{$list.image}" alt="{$list.title}"><span>{$list.title}</span>
+                        </a>
+                        {/tp:list}
+                        {tp:list id="8" name="list" limit="1,4" where="image <> '' AND star = 5"}
+                        <a style="display: none" href="{$list.url}" target="_blank">
+                            <img src="{$list.image}" alt="{$list.title}"><span>{$list.title}</span>
+                        </a>
+                        {/tp:list}
+                    </div>
+                    <div class="banner_bg"></div>
+                    <div id="bannerjsNav" class="bannerjsNav">	
+                        <a class="trigger imgSelected" href="javascript:void(0)">1</a>
+                        <a class="trigger" href="javascript:void(0)">2</a>
+                        <a class="trigger" href="javascript:void(0)">3</a>
+                        <a class="trigger" href="javascript:void(0)">4</a>
+                        <a class="trigger" href="javascript:void(0)">5</a>		
+                    </div>
+                </div>
+            </div>
+            <div class="main_1">
+                <div class="left">
+                    {tp:list id="8" name="list" limit="1" where="image <> '' AND star > 0"}
+                    <a href="{$list.url}" target="_blank" title="{$list.title}">
+                        <img src="{$list.image}" alt="{$list.title}" alt="{$list.title}">
+                    </a>
+                    {/tp:list}
+                </div>
+                <div class="right">
+                    {tp:list id="8" name="list" limit="1" where="image <> '' AND star > 0"}
+                    <h3><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></h3>
+                    {/tp:list}
+                    {tp:list id="8" name="list" limit="1,3" where="star > 0"}
+                    <p><a href="{$list.url}" target="_blank" title="{$list.title}">[{$list.title}]</a></p>
+                    {/tp:list}
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="main_1">
+                <div class="left">
+                    {tp:list id="8" name="list" limit="3,1" where="image <> '' AND star > 0"}
+                    <a href="{$list.url}" target="_blank" title="{$list.title}">
+                        <img src="{$list.image}" alt="{$list.title}" alt="{$list.title}">
+                    </a>
+                    {/tp:list}
+                </div>
+                <div class="right">
+                    {tp:list id="8" name="list" limit="3,1" where="image <> '' AND star > 0"}
+                    <h3><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></h3>
+                    {/tp:list}
+                    {tp:list id="8" name="list" limit="4,3" where="star  > 0"}
+                    <p><a href="{$list.url}" target="_blank" title="{$list.title}">[{$list.title}]</a></p>
+                    {/tp:list}
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="main_1">
+                <div class="left">
+                    {tp:list id="8" name="list" limit="7,1" where="image <> '' AND star > 0"}
+                    <a href="{$list.url}" target="_blank" title="{$list.title}">
+                        <img src="{$list.image}" alt="{$list.title}" alt="{$list.title}">
+                    </a>
+                    {/tp:list}
+                </div>
+                <div class="right">
+                    {tp:list id="8" name="list" limit="7,1" where="image <> '' AND star > 0"}
+                    <h3><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></h3>
+                    {/tp:list}
+                    {tp:list id="8" name="list" limit="7,3" where="star  > 0"}
+                    <p><a href="{$list.url}" target="_blank" title="{$list.title}">[{$list.title}]</a></p>
+                    {/tp:list}
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="main_2">
+                <ul>
+                    {tp:list id="8" name="list" limit="8"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+                <ul>
+                    {tp:list id="8" name="list" limit="8,8"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="main_3">
+                <div class="title">头条推荐</div>
+                {tp:list id="8" name="list" limit="1" where="image <> ''"}
+                <a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" alt="{$list.title}" width="100%" style="height:180px;"></a>
+                {/tp:list}
+                <div class="txt">
+                {tp:list id="8" name="list" limit="1" where="image <> ''"}
+                <p><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></p>
+                {/tp:list}
+                {tp:list id="8" name="list" limit="1,4" where="star > 0"}
+                <a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a>
+                {/tp:list}
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="main_4">
+                <div class="title">音乐专栏</div>
+                <div class="pic">
+                    {tp:list id="8" name="list" limit="1" where="image <> ''"}
+                    <p><a href="{$list.url}" target="_blank">{$list.title}</a></p>
+                    <a href="{$list.url}" target="_blank" title="{$list.title}">
+                        <img src="{$list.image}" alt="{$list.title}" class="left" width="130px">
+                    </a>
+                    <p class="right">
+                        <a href="{$list.url}" target="_blank" title="{$list.title}">
+                            {$list.summary}<span> [详细] </span>
+                        </a>
+                    </p>
+                    {/tp:list}
+                    <div class="clear"></div>
+                </div>
+                <ul>
+                    {tp:list id="8" name="list" limit="3"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+            <div class="main_5">
+                <div class="title">视频风暴</div>
+                <ul>
+                    {tp:list id="8" name="list" limit="4" where="image <> ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" alt="{$list.title}"  style="width: 100%;height: 85px;"><br>{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="gg2"><script language="javascript">index_02();</script></div>
+        <div class="main_left left">
+            <div class="cd-tabs">
+                <div class="tab">
+                    <nav>
+                        <ul class="cd-tabs-navigation">
+                            <li><a data-content="box1" href="javascript:;" class="select">最新</a></li>
+                            <li><a data-content="box2" href="javascript:;">星闻</a></li>
+                            <li><a data-content="box3" href="javascript:;">电影</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <ul class="cd-tabs-content">
+                    <li data-content="box1" class="selected cd-tabs-li">
+                        <div class="main_6">
+                            <ul id="js-news-list">
+                                {tp:list id="8" name="list" limit="10"}
+                                <li>
+                                    <h3><a href="{$list.url}" target="_blank">{$list.title}</a></h3>
+                                    <div class="text">
+                                        {if $list.image}
+                                        <a href="{$list.url}" target="_blank" title="{$list.title}">
+                                            <img class="left" src="{$list.image}" alt="{$list.title}"/>
+                                        </a>
+                                        {/if}
+                                        <p><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.summary}</a></p>
+                                    </div>
+                                    <span class="time left">{$list.create_time|date="Y-m-d"}</span> 
+                                    <span class="right"><a href="javascript:;">分享</a></span>
+                                    <i class="right">|</i>
+                                    <span class="right"><a href="javascript:;">评论</a></span>
+                                </li>
+                                {/tp:list}
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-content="box2" class="cd-tabs-li">
+                        <div class="main_6">
+                            <ul>
+                                {tp:list id="9" name="list" limit="11"}
+                                <li>
+                                    <h3><a href="{$list.url}" target="_blank">{$list.title}</a></h3>
+                                    <div class="text">
+                                        {if $list.image}
+                                        <a href="{$list.url}" target="_blank" title="{$list.title}">
+                                            <img class="left" src="{$list.image}" alt="{$list.title}"/>
+                                        </a>
+                                        {/if}
+                                        <p><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.summary}</a></p>
+                                    </div>
+                                    <span class="time left">{$list.create_time|date="Y-m-d"}</span> 
+                                    <span class="right"><a href="javascript:;">分享</a></span>
+                                    <i class="right">|</i>
+                                    <span class="right"><a href="javascript:;">评论</a></span>
+                                </li>
+                                {/tp:list}
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-content="box3" class="cd-tabs-li">
+                        <div class="main_6">
+                            <ul>
+                                {tp:list id="13" name="list" limit="11"}
+                                <li>
+                                    <h3><a href="{$list.url}" target="_blank">{$list.title}</a></h3>
+                                    <div class="text">
+                                        {if $list.image}
+                                        <a href="{$list.url}" target="_blank" title="{$list.title}">
+                                            <img class="left" src="{$list.image}" alt="{$list.title}"/>
+                                        </a>
+                                        {/if}
+                                        <p><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.summary}</a></p>
+                                    </div>
+                                    <span class="time left">{$list.create_time|date="Y-m-d"}</span> 
+                                    <span class="right"><a href="javascript:;">分享</a></span>
+                                    <i class="right">|</i>
+                                    <span class="right"><a href="javascript:;">评论</a></span>
+                                </li>
+                                {/tp:list}
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cd-more" id="js-load-more">
+                查看更多
+            </div>
+        </div>
+        <div class="right">
+            <div class="main_5">
+                <div class="title">影评吐槽</div>
+                <ul>
+                    {tp:list id="8" name="list" limit="2" where="image <> ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" width="130px" alt="{$list.title}"/><br>{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+            <div class="main_7">
+                <div class="title">独家出品</div>
+                <ul>
+                    {tp:list id="8" name="list" limit="2" where="image <> ''"}
+                    <li><img src="{$list.image}" style="width: 100%; height: 180px;"><a href="{$list.url}" target="_blank">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+            <div class="gg3">
+                <script language="javascript">right01();</script>
+            </div>
+            <div class="main_8">
+                <div class="title">八卦速递</div>
+                <ul>
+                    {tp:list id="8" name="list" limit="10"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                    </ul>
+            </div>
+            <div class="main_5">
+                <div class="title">电视穿帮</div>
+                <ul>
+                    {tp:list id="8" name="list" limit="4" where="image <> ''"}
+                    <li><a href="{$list.url}" target="_blank" title="{$list.title}"><img src="{$list.image}" style="width: 100%;height: 85px;" alt="{$list.title}"/><br>{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="main_9">
+                <div class="title">海外娱乐</div>
+                <div class="pic">
+                    {tp:list id="8" name="list" limit="1" where="image <> ''"}
+                    <a href="{$list.url}" target="_blank" title="{$list.title}" class="aimg"><img src="{$list.image}" alt="{$list.title}"/></a>
+                    {/tp:list}
+                    {tp:list id="8" name="list" limit="3"}
+                    <a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a>
+                    {/tp:list}
+                </div>
+            </div>
+            <div class="gg4"></div>
+            <div class="main_10">
+                <div class="title">热门排行</div>
+                <ul>
+                    {tp:list id="8" name="list" limit="10"}
+                    <li><span>{$key+1}</span><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+                    {/tp:list}
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="friend">
+        <div class="title2"><span>友情链接</span></div>
+        {tp:link name='link'}
+        <a target="_blank" href="{$link.url}">{$link.name}</a>
+        {/tp:link}
+    </div>
+    {include file="common/footer"/} 
+    <script>
+        $(function () {
+            var counter = 0;
+            var pageStart = 10;
+            var pageSize = 10;
+            // getData(pageStart, pageSize);
+            $("#js-load-more").click(function () {
+                ++counter;
+                pageStart = counter * pageSize;
+                getData(pageStart, pageSize);
+            });
+        });
+        function getData(offset, size) {
+            $.ajax({
+                type: 'GET',
+                url: '{:url("home/index/getList")}?start=' + offset + '&size=' + size,
+                dataType: 'json',
+                success: function (reponse) {
+                    var data = reponse.list;
+                    var sum = reponse.list.length;
+                    var result = '';
+                    for (var i = 0; i < sum; i++) {
+                        console.log(i);
+                        
+                        console.log(data[i]);
+                        
+                        var image = '';
+                        if (data[i].image) {
+                            image = '<a href="'+data[i].url+'" target="_blank" title="'+data[i].title+'"><img class="left" src="'+data[i].image+'" alt="'+data[i].title+'"/></a>';
+                        }
+                        result += '<li><h3><a href="'+data[i].url+'" target="_blank">'+data[i].title+'</a></h3><div class="text">'+image+'<p><a href="'+data[i].url+'" target="_blank" title="data[i].title">'+data[i].summary+'</a></p></div><span class="time left">'+data[i].create_time+'</span> <span class="right"><a href="javascript:;">分享</a></span><i class="right">|</i><span class="right"><a href="javascript:;">评论</a></span></li>';
+                    }
+                    $('#js-news-list').append(result);
+                    if (sum < size) {
+                        $("#js-load-more").hide();
+                    } else {
+                        $("#js-load-more").show();
+                    }
+                },
+                error: function (xhr, type) {
+                    alert('Ajax error!');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

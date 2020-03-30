@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>有声读物、有声小说免费下载mp3,评书在线收听 - 移动版爱听网</title>
+    <meta name="keywords" content='有声小说,在线收听,听书网,手机收听,移动版,爱听网'>
+    <meta name="description" content='爱听网是最专业的有声小说,有声读物听书网站,他有着丰富的藏书,提供:百家讲坛,恐怖悬疑,历史军事,刑侦反腐,纪实文学,人文社科,经典音乐,文学故事,人物纪实,武侠,玄幻,评书相声,儿童读物,都市言情等有声小说的在线收听,有声小说免费下载,手机下载,还有娱乐资讯供您查看。'>
+    <meta http-equiv="Cache-Control" content="no-transform"> 
+    <meta http-equiv="Cache-Control" content="no-siteapp"> 
+    {include file="common/css"}
+</head>
+
+<body>
+    <!--头部start-->
+    <div class="head">
+        <a href="/"><div class="head_logo"></div></a>
+    </div>
+    <div class="menu">
+        <a href="/" class="active">首页</a>
+        <a href="{:url('mobile/index/typeList')}">分类</a>
+    </div>
+    <!--头部end-->
+    <div class="ad">
+        <script language="javascript">pub01();</script>
+    </div>
+    <!--推荐阅读start-->
+    <h3 class="cat_tit"><em></em>推荐阅读</h3>
+    {tp:list id="8" name="list" limit="3" where="image <> '' AND star > 0"}
+    <div class="bookbox">
+        <a href="{$list.url}">
+            <div class="bookimg"><img class="lazy" data-original="{$list.image}" src="{$public}images/blank.png"></div>
+            <div class="bookinfo">
+                <h4 class="bookname" style="height: 28px;line-height: 28px;">{$list.title}</h4>
+                <div class="author">{$list.author}</div>
+                <div class="cat">{$list.create_time|date="Y-m-d"}</div>
+                <div class="cl0"></div>
+                <div class="tj">荐</div>
+                <div class="intro">{$list.summary}</div>
+            </div>
+        </a>
+    </div>
+    {/tp:list}
+    <!--推荐阅读end-->
+    <div class="ad">
+        <script language="javascript">pub02();</script>
+    </div>
+    {tp:nav name='nav' limit='10' id="8"}
+    <h3 class="cat_tit">
+        <em></em>
+        <a href="{$nav.url}">{$nav['catname']}</a>
+        <a href="{$nav.url}" class="f-r">更多&gt;&gt;</a>
+    </h3>
+    {tp:list id="$nav['id']" name="list" limit="1" where="image <> '' AND star > 0" order="hits"}
+    <div class="bookbox">
+        <a href="{$list.url}">
+            <div class="bookimg"><img class="lazy" data-original="{$list.image}" src="{$public}images/blank.png"></div>
+            <div class="bookinfo">
+                <h4 class="bookname" style="height: 28px;line-height: 28px;">{$list.title}</h4>
+                <div class="author">{$list.author}</div>
+                <div class="cat">{$list.create_time|date="Y-m-d"}</div>
+                <div class="cl0"></div>
+                <div class="tj">热</div>
+                <div class="intro">{$list.summary}...</div>
+            </div>
+        </a>
+    </div>
+    {/tp:list}
+    <div class="book_list">
+        {tp:list id="$nav['id']" name="list" limit="4" where="star > 0"}
+        <a href="{$list.url}">{$list.title}</a>
+        {/tp:list}
+    </div>
+    {/tp:nav}
+    <script type="text/javascript">
+    /*$(function() {
+        $(".bookbox").click(function() {
+            goBook($(this).attr("bookId"), $(this).attr("bookir"));
+        });
+    });*/
+    </script>
+    <!--尾部start-->
+    {include file="common/footer"/}
+    <!--尾部end-->
+</body>
+
+</html>

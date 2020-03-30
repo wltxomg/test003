@@ -1,0 +1,5 @@
+<ul>
+    {tp:list name="list" limit="10" order="hits DESC"}
+    <li><span>{$key+1}</span><a href="{$list.url}" target="_blank" title="{$list.title}">{$list.title}</a></li>
+    {/tp:list}
+</ul>

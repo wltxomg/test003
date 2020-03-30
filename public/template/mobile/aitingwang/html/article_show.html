@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>{$info.title} - {$title} - 移动版爱听网</title>
+    <meta name="keywords" content="{$keywords},爱听网">
+    <meta name="description" content="{$description}">
+    <meta http-equiv="Cache-Control" content="no-transform"> 
+    <meta http-equiv="Cache-Control" content="no-siteapp"> 
+    {include file="common/css"}
+</head>
+
+<body>
+    <div class="head">
+        <a href="/">
+            <div class="head_logo"></div>
+        </a>
+    </div>
+    <div class="subhead">
+        <a href="javascript:;" onclick="javascript:history.back(-1);">返回</a>
+        <a href="javascript:;">正文</a>
+        <a href="/" class='ind'>首页</a>
+    </div>
+    <div>
+        <script language="javascript">pub01();</script>
+    </div>
+    <div class="htit">
+        <h1>{$info.title}</h1>
+        <div class="sh_s">
+            <span>
+                编辑：{$info.author}&nbsp;&nbsp;
+                时间：{$info.create_time|date="Y-m-d"}&nbsp;&nbsp;
+                字体：<a href="javascript:;" οnclick="changsize('10px')">小</a>&nbsp;&nbsp;<a href="javascript:;" οnclick="changsize('16px')">中</a>&nbsp;&nbsp;<a href="javascript:;" οnclick="changsize('20px')">大</a>
+            </span>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <script language="javascript">pub02();</script>
+    </div>
+    <div class="book_intro" id="content">
+        {$info.content|raw}
+    </div>
+    <div class="comment">
+        <!-- UY BEGIN -->
+        <div id="uyan_frame"></div>
+        <!-- <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2125644"></script> -->
+        <!-- UY END -->
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style_m"></div>
+        <!-- <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_m.js?uid=2125644" charset="utf-8"></script> -->
+        <!-- JiaThis Button END -->
+    </div>
+    <h3 class="cat_tit"><em></em>推荐阅读</h3>
+    {tp:list name="list" limit="5" where="star > 0"}
+    <div class="bookbox">
+        <a href="{$list.url}">
+            {if $list.image}
+            <div class="bookimg"><img class="lazy" data-original="{$list.image}" src="{$public}images/blank.png"></div>
+            {/if}
+            <div class="bookinfo">
+                <h4 class="bookname" style="height: 28px;line-height: 28px;">{$list.title}</h4>
+                <div class="author">{$list.author}</div>
+                <div class="cat">{$list.create_time|date="Y-m-d"}</div>
+                <div class="cl0"></div>
+                <div class="tj">热</div>
+                <div class="intro">{$list.summary}...</div>
+            </div>
+        </a>
+    </div>
+    {/tp:list}
+    <!--尾部start-->
+    {include file="common/footer"/}
+    <!--尾部end-->
+    <script>
+        function changsize(a){
+            console.log(a);
+            
+            var odiv1 = $("#content p");
+            odiv1.style.fontSize = a;
+        }
+    </script>
+</body>
+
+</html>

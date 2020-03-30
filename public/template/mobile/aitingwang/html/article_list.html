@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>{$title} - 移动版爱听网</title>
+    <meta name="keywords" content="{$keywords},爱听网">
+    <meta name="description" content="{$description}">
+    <meta http-equiv="Cache-Control" content="no-transform"> 
+    <meta http-equiv="Cache-Control" content="no-siteapp"> 
+    {include file="common/css"}
+</head>
+
+<body>
+    <div class="head">
+        <a href="/">
+            <div class="head_logo"></div>
+        </a>
+    </div>
+    <div class="subhead">
+        <a href="javascript:;" onclick="javascript:history.back(-1);">返回</a>
+        <a href="javascript:;">{$title}</a>
+        <a href="/" class='ind'>首页</a>
+    </div>
+    <h2 class="cat_tit"><em></em>{$title}</h2>
+    <div class="ad">
+        <script language="javascript">pub01();</script>
+    </div>
+    <div id="cateList_wap" class="book_slist">
+        {tp:list name="list"}
+        <a href="{$list.url}">
+            <div class="bookbox">
+                {if $list.image}
+                <div class="bookimg"><img class="lazy" data-original="{$list.image}" src="{$public}images/blank.png"></div>
+                {/if}
+                <div class="bookinfo">
+                    <h4 class="bookname">{$list.title}</h4>
+                    <div class="author">作者：{$list.author}&nbsp;&nbsp;&nbsp;阅读：{$list.hits}</div>
+                    <div class="cl0"></div>
+                    <div class="update">
+                        <span>更新时间：</span>{$list.create_time|date="Y-m-d"}
+                    </div>
+                    <div class="intro_line">
+                        <span>简介：</span>{$list.summary}...
+                    </div>
+                </div>
+            </div>
+        </a>
+        {/tp:list}
+    </div>
+    <div>
+        <script language="javascript">pub02();</script>
+    </div>
+    <div class="page">
+        {$page|raw}
+    </div>
+    <!--尾部start-->
+    {include file="common/footer"/}
+    <!--尾部end-->
+</body>
+
+</html>
